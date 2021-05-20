@@ -1,0 +1,94 @@
+* {
+  font-weight: 100;
+}
+/*variable*/
+:root {
+  --variable: rgb(28, 54, 28);
+}
+/*background*/
+.contenido {
+  padding: 20px;
+  width: 550px;
+  height: 300px;
+  margin: 20px;
+  background: var(--variable);
+  background-image: url(https://images.cointelegraph.com/images/1434_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy9iNmI5OGEwZTg2MTM3ZDZjMWNhYzlhZDc4MjM0Zjc4NS5qcGc=.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-size: 300px;
+  background-position: right top;
+  border: 10px solid transparent;
+  /*
+  background-attachment: fixed;
+*/
+}
+
+/*filter*/
+.imagen img {
+  filter: blur(0.5px);
+  filter: brightness(2);
+  filter: contrast(2);
+  filter: drop-shadow(5px 5px 5px black) drop-shadow(5px 5px 5px black);
+  filter: hue-rotate(105deg);
+  filter: invert(10%);
+  filter: opacity(0.8);
+  filter: saturate(30%);
+  width: 450px;
+}
+
+/*algunas funciones*/
+.contenidos {
+  background: cornflowerblue;
+  margin: 30px;
+  direction: rtl;
+  font-size: 30px;
+  letter-spacing: 5px;
+  user-select: none;
+}
+
+/*grid*/
+.grid-container {
+  margin: auto;
+  display: flex;
+  display: grid;
+  grid-template-rows: 50px 50px 50px;
+  grid-template-columns: 50px 50px 50px;
+  grid-gap: 5px;
+  background-color: rgb(27, 57, 58);
+  width: 250px;
+  height: 250px;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+.grid-item:nth-child(4) {
+  color: chartreuse;
+  justify-self: end;
+}
+.grid-item {
+  border: 2px solid black;
+  font-size: 20px;
+  background-color: cadetblue;
+  padding: 20px;
+}
+
+/*galeria*/
+.container {
+  display: grid;
+  display: flex;
+  background-color: rgb(34, 34, 87);
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fix));
+  padding: 40px;
+  margin: 40px;
+  height: 400px;
+  width: 400px;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  display: inline-block;
+}
+.container img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
